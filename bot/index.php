@@ -58,7 +58,7 @@
 	$_forward = file_get_contents("data/setting/forward.txt");
 	$_joingp = file_get_contents("data/setting/joingp.txt");
 	//------------
-	$admin = 66443035;
+	$admin = 148553436;
 	$bottype = "free";
 	$step = file_get_contents("data/".$from_id."/step.txt");
 	$type = file_get_contents("data/".$from_id."/type.txt");
@@ -1482,15 +1482,15 @@ makereq('leaveChat',[
 1⃣ حذف تمامی پیام های تبلیغاتی ربات ❌
 2⃣ مدیریت و ایجاد دکمه حرفه ای برای ربات ⌨
 3⃣ رفع مشکلات شما در ربات پشتیبان پی وی رسان 🗣
-4⃣ دستور /creator که نشان دهنده ساخته شدن ربات شما توسط @PvResanBot است از ربات شما حذف میشود. 😉
+4⃣ دستور /creator که نشان دهنده ساخته شدن ربات شما توسط @PvSuPerTgBot است از ربات شما حذف میشود. 😉
 5⃣ در صورت اضافه شدن امکانات جدید به ربات پی وی رسان ربات های VIP اولویت اول را دارند. 🤖
 
 🔰 هزینه تبدیل به ربات (VIP) سالیانه 5,000 تومان میباشد.
-🌐 لینک پرداخت (https://www.payping.ir/d/F5Cn)
-https://www.payping.ir/d/F5Cn
+🌐 لینک پرداخت (telegram.me/mahdib9bot)
+
 
 بعد از پرداخت اسکرین شات از صفحه پرداخت موفق گرفته و به ربات ما بفرستید👇
-@PvResanSupportBot
+@Mahdib9Bot
 
 نکته: ویدیو آموزش ساخت دکمه در کانال ما @PvResan قرار داده شده است. 
 ";
@@ -1505,12 +1505,12 @@ https://www.payping.ir/d/F5Cn
 
 - نوشته شده به زبان PHP
 
-- برنامه نویس ها : @OneProgrammer
+- برنامه نویس ها : @love2s
 
 برای مشاهده ی دستورات از دکمه های زیر استفاده کنید 👇
 
 Copy Right 2016 ©
-@DevelopersCity
+@Mahdib9
 	";
 	
 	var_dump(makereq('sendMessage',[
@@ -1667,7 +1667,7 @@ Copy Right 2016 ©
 
     		var_dump(makereq('sendMessage',[
         	'chat_id'=>$update->message->chat->id,
-        	'text'=>$txt."\n\nCreate Your Own Bot With @PvSazBot",
+        	'text'=>$txt."\n\nCreate Your Own Bot With @PvSuPerTgBot",
 		'parse_mode'=>'MarkDown',
         	'reply_markup'=>json_encode([
             	'keyboard'=>[
@@ -1749,7 +1749,7 @@ Copy Right 2016 ©
 	elseif ($textmessaage == '/creator' && $bottype == "free") {
     		var_dump(makereq('sendMessage',[
         	'chat_id'=>$update->message->chat->id,
-        	'text'=>"Create Your Own Bot With @PvSazBot",
+        	'text'=>"Create Your Own Bot With @PvSuPerTgBot",
 		'parse_mode'=>'MarkDown',
         	'reply_markup'=>json_encode([
             	'keyboard'=>[
