@@ -1,5 +1,5 @@
 <?php
-define('API_KEY','278389917:AAGEuTyerIfyepsk4ipIGKm6IIzNv0SXmEQ');
+define('API_KEY','278389917:AAEFEsmSP2PXNyvqZW74O6JMWmb4o4Kmj9Q');
 //----######------
 function makereq($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -183,7 +183,7 @@ $token = $textmessage ;
 		$source = str_replace("[*BOTTOKEN*]",$token,$source);
 		$source = str_replace("66443035",$from_id,$source);
 		save("bots/$un/index.php",$source);	
-		file_get_contents("https://api.telegram.org/bot".$token."/setwebhook?url=https:/mahdish9-sh9.rhcloud.com/b/bots/$un/index.php");
+		file_get_contents("https://api.telegram.org/bot".$token."/setwebhook?url=https:/mahdib9-sh9.rhcloud.com/bots/$un/index.php");
 		SendMessage($chat_id,"🚀 ربات شما با موفقیت نصب شده است 
 
 [برای ورود به ربات خود کلیک کنید 😃](https://telegram.me/$un)");
