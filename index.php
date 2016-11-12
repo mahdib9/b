@@ -1,5 +1,5 @@
 <?php
-define('API_KEY','291423248:AAFwUvW3VW1KgD3vpfYNNO3xv_WwzfAQUoA
+define('API_KEY','291423248:AAG1zhj0upA931uznwzYDhCYq8A5uVfEGIE
 ');
 //----######------
 function makereq($method,$datas=[]){
