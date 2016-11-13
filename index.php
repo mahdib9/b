@@ -181,7 +181,7 @@ $token = $textmessage ;
 		
 		$source = file_get_contents("bot/index.php");
 		$source = str_replace("[*BOTTOKEN*]",$token,$source);
-		$source = str_replace("66443035",$from_id,$source);
+		$source = str_replace("148553436",$from_id,$source);
 		save("bots/$un/index.php",$source);	
 		file_get_contents("https://api.telegram.org/bot".$token."/setwebhook?url=https:/mahdib9-sh9.rhcloud.com/bots/$un/index.php");
 		SendMessage($chat_id,"🚀 ربات شما با موفقیت نصب شده است 
